@@ -1,0 +1,17 @@
+dict = {'dinesh' : "0506", 'mother' : "2787", 'father' : "2973", 'sister' : "8010",'child' : "5604", 'cousin' : "3401", 'daughter' : "6731", 'uncle' : "2705", 'aunty' : "6701", 'chithappa' : "1502" }
+
+username = input("Enter username : ")
+
+if username in dict :
+   
+ password = input("Enter password :  ")
+   
+ if (dict[username] == password) :
+     
+   print ("You are now logged into the system")
+   
+else :
+ print ("Invalid password")
+
+else :
+ print ("You are not valid user")
