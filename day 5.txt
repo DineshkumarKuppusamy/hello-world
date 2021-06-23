@@ -1,0 +1,16 @@
+
+   def sayhello():
+print("helloworld")
+print("this is included in the function")
+print("this is not a part of the function")
+sayhello()
+
+
+
+def square(x)
+  return x*x
+print(square(8))
+print(square)
+d=lambda x:x*x
+print(d)
+print(d(13)

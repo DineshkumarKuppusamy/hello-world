@@ -1,0 +1,35 @@
+    
+
+ Example for print of any line:
+print("hello world")
+
+a=126
+print(a)
+b=1.43
+print(b)
+
+ list1=[13,48,'hello',51,'abcdef',21]
+print("reference os list1:",id(list1))
+print(list1)
+
+print("The numbers are:")
+for num in range(10):
+  print(num)
+
+x=2
+if(x<10):
+  print("x is less")
+ print("This is another script")
+
+
+a=10
+print("The reference of a with value:",id(a))
+b=43.4
+print("The reference of b with value:",id(b))
+name="kumar"
+print("The reference of name with value:",id(name))
+
+
+list1=[[12,13,"hello",5.5,"kumar"]
+print("The reference of list1 :"id(list1))
+print(list1)

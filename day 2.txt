@@ -1,0 +1,28 @@
+   def encrypt():
+      strings=input('what is your message:')
+      even = strings[::2]
+      odd = strings[1::2]
+      print(even)
+      print(odd)
+encrypt()
+
+
+s1="hello world"
+for char in s1:
+   print(char)
+ print(s1[5])
+print(s1[-1])
+print(s1[1:5]
+
+
+
+a=10
+list=[10,20,30,40,50]
+  if a in list1:
+  print("yes")
+else
+  print("no")
+
+name=' virat’
+score=43
+print("The score of %s is %d" % (name,score))

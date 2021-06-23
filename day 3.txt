@@ -1,0 +1,18 @@
+
+
+def encrypt():
+    strings=input('what is your meassage; ")
+    even=strings[::2]
+    odd=strings[1::2]
+    print(even+even)
+  encrypt()
+
+
+list1=[10,20,30,40,50]
+print("elements of list1:",list1)
+print("elements of list1:",len(list1))
+list1.append(60)
+print("elements of list1:",list1)
+print("elements of list1:",len(list1))
+
+

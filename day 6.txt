@@ -1,0 +1,34 @@
+
+def findnum(n):
+   
+ num=0
+   
+ while num<n:
+       
+  num+=1
+       
+  yield num
+      
+  total=sum(findnum(200000))
+   
+  print(total)
+
+
+def genseq():
+  return 1
+  return 2
+  return 3
+for num in genseq():
+  print(num)
+
+
+def findnum(n):
+   num=0
+   while num<n:
+   num+=1
+    yield num
+ for n in findnum(20):
+  print(n,end='\t')
+
+
+
