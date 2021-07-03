@@ -1,0 +1,82 @@
+import re
+S1=input("Enter a string\n")
+sobj=re.search(r'to*tal',s1)
+if sobj:
+    print("mathched")
+else:
+     print("not matched")
+
+
+import re
+S1=input("Enter a string\n")
+sobj=re.search(r'to+tal',s1)
+if sobj:
+    print("mathched")
+else:
+     print("not matched")
+
+
+import re
+s1=input("Enter a string\n")
+sobj=re.search(r'https?://www.mydomain.com',s1)
+  if sobj:
+     print("matched")
+   else:
+    print("not matched")
+
+
+
+import re
+s1=input("Enter a string\n")
+sobj=re.search(r'hello\s[abcdefghijklmn]',s1)
+  if sobj:
+     print("matched")
+   else:
+    print("not matched")
+
+
+import re
+fh=open('numbers.txt','r')
+for line in fh.readlines():
+   line=line.rstrip('\n)
+    sobj=re.search(r'.#(\d+)',line)
+    if sobj:
+       print(sobj.group(1))
+  fh.close()
+
+
+import re
+#s1="hello world"
+s1="hi hello python"
+sobj=re.search(r'\bhello\b',s1)
+if sobj:
+     print("matched")
+else:
+     print("not matched")
+
+
+
+import re
+fh=open('input.txt','r')
+d1={}
+d2={}
+count=1
+for line in fh.readlines():
+      line=line.rstrip('\n)
+      sobj=re.search('r^\s*$',line)
+      if sobj:
+           continue
+        sobj=re.search('r^#*.*',line)
+        if sobj:
+          d1.setdefault('person{}'.format(count),d2)
+           count+=1
+          d2.clear()
+        else:
+           persons=line.split(' ')
+           d2[persons[0]]=person[1]
+         fh.close()
+         print(d1)
+
+
+
+

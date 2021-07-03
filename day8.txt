@@ -1,0 +1,51 @@
+ import subprocess
+p1=subprocess.Popen(['ls'],stdout=subprocess.PIPE,shell=True
+res,err=p1.communicate()
+print(res.decode('utf-8'))
+
+
+import datetime
+x=datetime.datetime.now()
+print(x)
+print("the current year is:",x.year)
+print("the current month is:",x.month)
+print("date is:",x.day)
+print(x.strftime("%Y %B %d"))
+
+
+from hello import*
+print(addnum(20,5))
+print(divnum(20,5))
+
+
+def addnum(a,b)
+   return a+b
+def divnum(a,b)
+  return a/b
+if_name_=='_main_':
+
+  print("calling from module:"_name_)
+  print("calling from module:"addnum(30,5))
+  print("calling from module:"divnum(30,5))
+
+
+import sys
+import requests
+print(sys.argv[1])
+r=requests.get(sys.argv[1])
+if r.status_code==200:
+  print(r.text) 
+s1=sys.stdout
+fh=open('message.log','w')
+sys.stdout=fh
+print("this is a message from python script")
+fh.close()
+
+
+
+
+
+
+
+
+

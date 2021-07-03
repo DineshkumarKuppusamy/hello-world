@@ -1,0 +1,113 @@
+
+class point:
+      """this is an example class"""
+       def show(self):
+             print("reference from object method:",self)
+             print("this is an object method")
+
+if_name_=="_main_"
+   obj=point()
+   print(obj._doc_)
+   obj.show()
+   print("reference from main:",obj)
+
+
+
+class point:
+      """this is an example class"""
+   def_init_(self,xval,yval):
+        self.x=23
+        self.y=30    
+def show(self):
+             #print("reference from object method:",self)
+             print("x-val:{},y-val:{}".format(self.x,self.y)
+
+if_name_=="_main_"
+   obj1=point(23,30)
+   #print(obj._doc_)
+   obj.show()
+   #print("reference from main:",obj)
+
+   obj2=point()
+   obj2.show()
+
+
+
+
+
+class A:
+    def printString(self):
+        print("from A")
+ 
+class B(A):
+    pass
+if_name_=="_main_";
+   obj=B()
+   obj.printString()
+
+
+
+class A:
+    def printString(self):
+        print("from A")
+ 
+class B(A):
+    def printString(self):
+     print("from B")
+if_name_=="_main_";
+   obj=B()
+   obj.printString()
+
+
+class A:
+    def printString(self):
+        print("from A")
+ class C:
+    def printString(self):
+     print("from C")
+class B(A,C):
+    pass
+if_name_=="_main_";
+   obj=B()
+   obj.printString()
+
+
+class A:
+    def printString(self):
+        print("from A")
+ class C:
+    def printString(self):
+     print("from C")
+class B(A,C):
+    pass
+if_name_=="_main_";
+   obj=B(_mro_:Tuple)   #method resolution order
+   print(B._mro_)
+   obj.printString()
+
+
+class point:
+     number_of_points=0
+      def_init_(self,xval,yval):
+        self.x=xval
+        self.y=yval
+        points.number_of_points+=1
+def show(self):
+             #print("reference from object method:",self)
+             print("x-val:{},y-val:{}".format(self.x,self.y)
+def showcount (self):
+       print("number of points {}".format(point.number-of-points))
+def_del_(self):
+      print("{} destroyed".format(self._class_._name_))
+if_name_=="_main_"
+   obj1=point(23,30)
+   obj1.show()
+   obj1.showCount()
+   
+   obj2=point(41,58)
+   obj2.show()
+   obj2.showcount()
+
+
+
+
