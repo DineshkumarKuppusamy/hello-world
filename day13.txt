@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-with, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" contents="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <table>
+      <tr>
+          <th>Email</th>
+          <th>organization</th>
+      </tr>
+      {% for customer %}
+      <tr>
+         <td>{{ customer[0] }}</td>
+         <td>{{ customer[1] }}</td>
+      </tr> 
+         {% endfor %}
+    </table>
+     <form action="/customer"methods="post">
+          <p><input> type="text" name="email"></p>
+          <p><input> type="text" name="organization"></p>
+          <p><input> type="submit" value="submit"></p>
+     </form>
+</body>
+</html>
+
+
+
+from flask import Flask,render_template
+app=flask(_name_)
+@app.route('/')
+def index():
+  colors=['red','green','orange','white','yellow']
+   return render_template('index.html',colors=colors)
+@app.route('/customer')
+def customer():
+    return "helloworld"
+if_name_=="_main_":
+   app.run()
+
+
+
+from flask import Flask,render_template
+app=flask(_name_)
+@app.route('/')
+def index():
+  d1={
+     's1'= {'name':'tom','age':12}
+     's1'= {'name':'dio','age':11}
+     's1'= {'name':'bob','age':12}
+
+
+   return render_template('index.html',students=d1)
+@app.route('/customer')
+def customer():
+    return "helloworld"
+if_name_=="_main_":
+   app.run()
+
+
+      
