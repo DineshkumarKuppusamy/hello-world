@@ -1,0 +1,83 @@
+import threading
+import time
+class Mythread(threading,Thread):
+      def_init_(self,id,name,timegap):
+              threading.Thread._init_(self)
+              self.id=id
+               self.name=name
+                self.timegap=timegap
+      def run(self):
+             print("Entering thread {}".format(self.name))
+             threadlock.acquire()
+             print_time(self.name,self.timegap,5)
+             threadLock.release()
+             print("Existing thread {}".format(self.name))
+      def print_time(name,delay,counter):
+           while counter:
+               print("{}:{}".format(name,time.asctime(time.localtime(time.time()))))
+               time.sleep(delay)
+                counter-=1
+      t1=mythread(1, "Thread-1",1)
+      t2=mythread(1, "Thread-2",2)
+      t1.start()
+      t2.start()
+      print("Done!!!")
+
+#to archieve thread sychronization ,we use join method of threads
+      t1.join()
+      t2.join()
+
+
+
+
+
+import multiprocessing
+def withdraw(balance,lock):
+   for_in range(10000):
+        lock.acquire()
+        balance.value=balance.value-1
+        lock.release()
+def deposit(balance):
+     for_ in range(10000):
+         lock.acquire()
+         balance.value=balance.value+1
+         lock.release()
+if_name_==_"main_":
+          balance=multiprocessing.value('i',100)
+          lock=mutiprocessing.Lock()
+          p1=multiprocessing.Process(target=withdraw,args=balance,lock))
+           p2=multiprocessing.Process(target=deposit,args=balance,lock))
+           p1.start()
+           p2.start()
+           p1.join()
+           p2.join()
+           print("Final result:",balance,value)
+
+import json
+d1={"name":"zara","age":7,"class":"second"}
+fh=open('d1.json','w')
+json.dump(d1,fh)
+fh.close()
+
+
+import json
+fh=open('day11/d1.json','r')
+d2=json.load(fh)
+fh.close()
+print(d2)
+
+
+
+import multiprocessing
+def print_cube(num)
+     print("Cube:{}".format(num*num*num))
+def print_square(num):
+     print("Square:{}".format(num*num))
+if_name_=="_main_":
+      p1=multiprocessing.process(target=print_cube,args=(10,))
+       p2=multiprocessing.process(target=print_square,args=(10,))
+       p1.start()
+       p2.start()
+       p1.join()
+       p2.join()
+       print("Done!!!")
